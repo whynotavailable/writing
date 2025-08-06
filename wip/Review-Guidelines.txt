@@ -50,6 +50,6 @@ review.
 
 What I see relatively often when it comes to code reviews that take a long time are a large amount
 of nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the reviewer to do the
-legwork to prove it code reviews can be made significantly faster.
+legwork to prove tech debt the code reviews can be made significantly faster.
 
 # The Guideline
