@@ -30,6 +30,13 @@ Performance: The code will impact the performance of the specific location or th
 May impact the results of the review, but a defense against it would be load and performance tests
 before and after the change showing that SLOs are still met.
 
+Bug: A defect in the software. Will impact the results of the review.
+
+Logic: An issue with the change not matching the request from the work tracking system. Should
+include a link to the appropriate place in the work tracking system that outlines the change needed
+to be made alongside a description of why the code doesn't meet the request. Will impact the results
+of the review.
+
 Tech Debt: The code increases tech debt and therefore requires changes. This type will impact the
 review, but is special in that it should be accompanied by an associated work item to update coding
 guidelines for the project in cover the change. As in "If something would be considered tech debt it
