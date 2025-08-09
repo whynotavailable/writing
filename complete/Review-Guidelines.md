@@ -1,5 +1,7 @@
 programming
 
+# Review Guidelines
+
 In this world of AI I I'm compelled to put together some information on what I believe efficient
 code reviews look like.
 
@@ -9,7 +11,7 @@ quality, it doesn't help work get completed nor does it help people learn.
 This document outlines a process for applying a standard to code reviews. It's broken up into two
 parts: the first being how to apply your standard, and the second on how to develop your standard.
 
-# Code Reviews
+## Code Reviews
 
 Code reviews should be unopinionated. If you are going to stop code from being merged you should
 have a real/valid reason for doing so. Any comment on a code review (either in writing or in person)
@@ -49,4 +51,4 @@ What I see relatively often when it comes to code reviews taking a long time are
 nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the reviewer to do the
 legwork to prove tech debt, code reviews can be made significantly faster.
 
-# The Guideline
+## The Guideline
