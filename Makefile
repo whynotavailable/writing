@@ -1,0 +1,2 @@
+default:
+	fish make.fish

@@ -1,6 +1,6 @@
 # Review Guidelines
 
-In this world of AI I I'm compelled to put together some information on what I believe efficient
+In this world of AI I, I'm compelled to put together some information on what I believe efficient
 code reviews look like.
 
 It's easy when executing a code review to bring in biases and opinion, while this may help code

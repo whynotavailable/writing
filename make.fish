@@ -13,8 +13,9 @@ echo "" >>$readmeFile
 
 for index in (set -n | grep _index)
     set indexFile "$index.md"
+    set indexParts (string split "_" $index)
 
-    echo "- [$index]($indexFile)" >>$readmeFile
+    echo "- [$indexParts[1]]($indexFile)" >>$readmeFile
 
     rm -f "$indexFile"
 

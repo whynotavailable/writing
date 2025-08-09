@@ -10,5 +10,9 @@ insert_final_newline = true
 [*.go]
 indent_style = tab
 
-[*.{json,yml,yaml,ts,js}]
+[Makefile]
+indent_style = tab
+
+
+[*.{json,yml,yaml,ts,js,tsx,jsx}]
 indent_size = 2
