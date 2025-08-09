@@ -20,6 +20,6 @@ for index in (set -n | grep _index)
 
     for file in $$index
         set baseName "$(path basename $file)"
-        echo "- [$file]($baseName)" >>$indexFile
+        echo "- [$baseName]($file)" >>$indexFile
     end
 end
