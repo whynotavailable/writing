@@ -1,0 +1,52 @@
+programming
+
+In this world of AI I I'm compelled to put together some information on what I believe efficient
+code reviews look like.
+
+It's easy when executing a code review to bring in biases and opinion, while this may help code
+quality, it doesn't help work get completed nor does it help people learn.
+
+This document outlines a process for applying a standard to code reviews. It's broken up into two
+parts: the first being how to apply your standard, and the second on how to develop your standard.
+
+# Code Reviews
+
+Code reviews should be unopinionated. If you are going to stop code from being merged you should
+have a real/valid reason for doing so. Any comment on a code review (either in writing or in person)
+should be prefaced with a type. I have defined a few comment types below, but you are free to change
+them or define extra ones.
+
+**Note**: A note is simply that. Something that's nothing more than a comment. It could be around
+code design, or something similar. Will not impact the actual results of the review.
+
+**Nitpick**: An opinion of something that doesn't fall under technical debt or other major issues.
+Things like parameter ordering or variable names can fall under this type. Will not impact the
+actual results of the review.
+
+**Performance**: The code will impact the performance of the specific location or the system as a
+whole. May impact the results of the review, but a defense against it would be load and performance
+tests before and after the change showing that SLOs are still met.
+
+**Bug**: A defect in the software. Will impact the results of the review.
+
+**Logic**: An issue with the change not matching the request from the work tracking system. Should
+include a link to the appropriate place in the work tracking system that outlines the change needed
+to be made alongside a description of why the code doesn't meet the request. Will impact the results
+of the review.
+
+**Tech Debt**: The code increases tech debt and therefore requires changes. This type will impact
+the review, but is special in that it should be accompanied by an associated work item to update
+coding guidelines for the project in cover the change. As in "If something would be considered tech
+debt it should be added to the coding guidelines."
+
+**Guidelines**: The code violates coding guidelines. A specific reference should be provided to the
+guideline in question as well as an explanation of how it applies. Will impact the results of the
+review.
+
+-
+
+What I see relatively often when it comes to code reviews taking a long time are large amounts of
+nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the reviewer to do the
+legwork to prove tech debt, code reviews can be made significantly faster.
+
+# The Guideline
