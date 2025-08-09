@@ -1,11 +1,9 @@
 set files (find ./complete/ -name "*.md")
 
 for file in $files
-    set tag "$(head -n 1 $file)"
-
-    set index "$(echo $tag)_index"
-
-    set -a $index "$file"
+    set parts (string split "/" $file)
+    set index "$(echo $parts[-2])_index"
+    set -a $index $file
 end
 
 set readmeFile "README.md"
@@ -21,6 +19,7 @@ for index in (set -n | grep _index)
     rm -f "$indexFile"
 
     for file in $$index
-        echo "- [$file]($file)" >>$indexFile
+        set baseName "$(path basename $file)"
+        echo "- [$file]($baseName)" >>$indexFile
     end
 end

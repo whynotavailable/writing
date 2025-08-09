@@ -1,5 +1,3 @@
-programming
-
 # Review Guidelines
 
 In this world of AI I I'm compelled to put together some information on what I believe efficient
@@ -45,7 +43,7 @@ debt it should be added to the coding guidelines."
 guideline in question as well as an explanation of how it applies. Will impact the results of the
 review.
 
--
+______________________________________________________________________
 
 What I see relatively often when it comes to code reviews taking a long time are large amounts of
 nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the reviewer to do the
