@@ -1,2 +1,1 @@
-- [9999-Review-Guidelines.md](../works/programming/9999-Review-Guidelines.md)
-- [8888-test.md](../works/programming/8888-test.md)
+- [DRAFT-Review-Guidelines.md](../works/programming/DRAFT-Review-Guidelines.md)
