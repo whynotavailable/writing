@@ -93,3 +93,15 @@ Following that should be any details pertinent to your application. These are so
 - How should logging should be performed?
 - How dependency injection is setup, and what patterns/best practices are in place?
 - What design patterns are important to follow?
+
+In our current world of AI it may be useful to combine your guidelines into instructions for your
+agent.
+
+## But Why?
+
+A few reasons.
+
+- Spending a large amount of time reviewing code doesn't make software significantly better.
+- Petty bickering is meaningless and a de-motivator for code authors.
+- AI code is a lot more common now and AIs can write code much faster than humans. Humans however
+  still need to be the ones to review such code.
