@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "marked": "^16.1.2"
+  },
+  "name": "writing",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
