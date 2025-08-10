@@ -50,3 +50,46 @@ nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the r
 legwork to prove tech debt, code reviews can be made significantly faster.
 
 ## The Guideline
+
+The guideline should be built in layers. With enterprise/company guidelines at the top with the
+least detail and getting more detailed going down the organizational structure and into the
+repository.
+
+The highest level should be the most abstract. Ideally simple things like "What programming
+languages are acceptable?" would be as far as you would go.
+
+Nearly immediately into tech organizational structure should be things like "What frameworks are
+allowed?" and "What architectural patterns should be used?" Use words like SHOULD or MUST when
+describing guidelines. While it's OK to allow for flexibility, the further down the organizational
+structure the less freedom there should be.
+
+Once it gets down to the repo level the guidelines should be **extremely** detailed and **never**
+optional.
+
+The filename can be whatever you'd like, but my suggestion would be `CODING.md` or more simply
+`CODING` for those who do not want to use markdown.
+
+The format of this file isn't dictated by any standard, but links to the organizational guidelines
+covering that repo should be at the top of the list, in order of specificity (with the company
+guidelines at the top).
+
+Immediately after the list of links should be a section describing the various sections of the code.
+What each folder is used for, and where a given file should go. Here's an example.
+
+```
+./logic - general business logic. Contains sub-folders for larger capabilites.
+./services - classes/functions for interacting with third party systems.
+./models - common models.
+
+If a new model is needed and isn't general usage, it should go in the logic or service folder with
+it's capability
+```
+
+Following that should be any details pertinent to your application. These are some ideas.
+
+- What database system is used?
+  - How is the database used?
+  - Are there naming conventions or patterns for the data in use?
+- How should logging should be performed?
+- How dependency injection is setup, and what patterns/best practices are in place?
+- What design patterns are important to follow?
