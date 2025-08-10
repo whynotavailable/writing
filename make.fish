@@ -25,4 +25,5 @@ for index in (set -n | grep _index)
     end
 end
 
+# the for loop returns an error cause it's stupid so this makes it work properly
 echo done
