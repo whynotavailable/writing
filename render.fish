@@ -1,7 +1,7 @@
 set oldRef "$(string trim (cat checkpoint 2> /dev/null))"
 
 if test -n "$oldRef"
-    set filesToRender (git diff --name-only HEAD $oldRef | grep ".md")
+    set filesToRender (git diff --name-only HEAD $oldRef | grep ".md" | grep "works")
 else
     set filesToRender (find works -name "*.md")
 end

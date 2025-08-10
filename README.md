@@ -1,9 +1,3 @@
 # Writing
 
-```fish
-git diff --name-only HEAD $lastUsed | grep ".md"
-
-git show-ref --head --hash HEAD
-```
-
-- [Programming](./indexes/programming.md)
+Articles for my website. The articles are rendered simply through the usage of the disk.
