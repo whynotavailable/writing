@@ -11,6 +11,7 @@ set readmeFile "README.md"
 cat ./README_base.md >$readmeFile
 echo "" >>$readmeFile
 
+echo what
 for index in (set -n | grep _index)
     set indexFile "$index.md"
     set indexParts (string split "_" $index)
@@ -24,3 +25,5 @@ for index in (set -n | grep _index)
         echo "- [$baseName]($file)" >>$indexFile
     end
 end
+
+echo what
