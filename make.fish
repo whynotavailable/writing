@@ -7,6 +7,6 @@ for dir in (find works -type directory | grep "/")
 
     for file in (find "works/$base" -name "*.md" | sort -r)
         set fileName (path basename $file)
-        echo "- [$fileName](../$file)" >>$indexFile
+        echo "- [$fileName](/$file)" >>$indexFile
     end
 end
