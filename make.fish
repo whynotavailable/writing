@@ -5,7 +5,7 @@ for dir in (find works -type directory | grep "/")
 
     rm -f $indexFile
 
-    for file in (find "works/$base" -name "*.md" | sort -r)
+    for file in (find "works/$base" -name "*.md" ! -name "DRAFT*" | sort -r)
         set fileName (path basename $file)
         echo "- [$fileName](/$file)" >>$indexFile
     end
