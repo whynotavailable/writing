@@ -1,4 +1,4 @@
-```toml
+```yaml
 hi: test
 ```
 
