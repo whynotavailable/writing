@@ -1,6 +1,6 @@
-default: run
+default:
 	git c "tap"
 	git push
 
-run:
+index:
 	fish make.fish
