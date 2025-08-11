@@ -9,4 +9,5 @@ clean:
 	rm -rf ./.cache
 
 render:
-	bun run ./scripts/render.ts
+	rm -rf ./.build
+	bun run ./scripts/render.ts ../site
