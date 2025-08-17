@@ -4,12 +4,22 @@ mkdir -p "$cacheDir"
 
 # TODO: checkpoint diff this.
 for file in (find ./works -name "*.md")
-    set targetFile "$(string replace works "$cacheDir/renders" "$file")"
+    set category "$(cat "$file" | head -n 1)"
+    set targetFile "$(string replace works "$cacheDir/renders/$category" "$file")"
     set targetFile "$(path normalize "$targetFile")"
     set targetFile "$(path change-extension ".html" "$targetFile")"
 
     mkdir -p "$(path dirname "$targetFile")"
-    bun run marked -i "$file" -o "$targetFile"
+    echo here $targetFile
+    cat $file | tail -n +3 | bun run marked -o "$targetFile"
+
+    set stubFile "$(path normalize "$file")"
+    set stubFile "$(path change-extension ".txt" "$stubFile")"
+    if test -e "$stubFile"
+        set targetStubFile "$(string replace works "$cacheDir/renders" "$stubFile")"
+        cp "$stubFile" "$targetStubFile"
+        echo $targetStubFile
+    end
 end
 
 rm -rf "$cacheDir/indexes"
