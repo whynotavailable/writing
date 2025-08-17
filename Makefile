@@ -1,13 +1,5 @@
-default:
-	git c "tap"
+upload:
+	cd web
+	git add -A
+	git commit -m "content update"
 	git push
-
-build:
-	fish ./scripts/build.fish
-
-clean:
-	rm -rf ./.cache
-
-render:
-	rm -rf ./.build
-	bun run ./scripts/render.ts ../site
