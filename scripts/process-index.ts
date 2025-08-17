@@ -5,7 +5,7 @@ const bucketSize = 6;
 
 let sourceFileName = process.argv[2]!;
 
-interface Article {
+export interface Article {
   title: string;
   num: number;
   catagory: string;
