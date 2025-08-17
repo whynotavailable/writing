@@ -10,15 +10,13 @@ for file in (find ./works -name "*.md")
     set targetFile "$(path change-extension ".html" "$targetFile")"
 
     mkdir -p "$(path dirname "$targetFile")"
-    echo here $targetFile
     cat $file | tail -n +3 | bun run marked -o "$targetFile"
 
     set stubFile "$(path normalize "$file")"
     set stubFile "$(path change-extension ".txt" "$stubFile")"
     if test -e "$stubFile"
-        set targetStubFile "$(string replace works "$cacheDir/renders" "$stubFile")"
+        set targetStubFile "$(string replace works "$cacheDir/renders/$category" "$stubFile")"
         cp "$stubFile" "$targetStubFile"
-        echo $targetStubFile
     end
 end
 
@@ -36,4 +34,5 @@ end
 
 for file in (find ./.cache/indexes -type file)
     bun run ./scripts/process-index.ts "$file"
+    bun run ./scripts/build.ts "$file.json"
 end
