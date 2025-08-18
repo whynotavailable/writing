@@ -1,1 +1,1 @@
-echo hi
+fish scripts/run.fish
