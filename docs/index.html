@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{@site.locale}}">
+<html lang="">
 
 <head>
     <meta charset="utf-8" />
@@ -10,10 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/main.css" />
-
-    {{~> (lookup . 'header') }}
-</head>
+    <link rel="stylesheet" href="/main.css" /></head>
 
 <body class="">
     <div class="body-container">
@@ -28,8 +25,12 @@
             </ul>
         </nav>
         <hr class="border-muted mb-2 border-dashed" />
-        <div>
-            {{~> (lookup . 'body') }}
+        <div><div class="mb-5">
+  <h2 class="underline"><a href="/posts/002_Other.html">Other</a></h2>
+</div>
+<div class="mb-5">
+  <h2 class="underline"><a href="/posts/001_Review-Guidelines.html">Review Guidelines</a></h2>
+</div>
         </div>
         <hr class="border-muted mt-2 border-dashed" />
         <div class="center-text">
