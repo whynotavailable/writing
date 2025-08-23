@@ -1,1 +1,1 @@
-fish scripts/run.fish
+# fish scripts/run.fish

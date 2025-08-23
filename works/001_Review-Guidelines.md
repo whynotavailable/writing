@@ -1,3 +1,10 @@
+---
+tag: programming
+stub: >
+    In this world of AI I, I'm compelled to put together some information on what
+    I believe efficient code reviews look like.
+---
+
 In this world of AI I, I'm compelled to put together some information on what I believe efficient
 code reviews look like.
 
