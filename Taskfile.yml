@@ -8,5 +8,5 @@ vars:
 tasks:
   default:
     cmds:
-      - go run ~/dev/blag/main.go
+      - blag
     silent: true
