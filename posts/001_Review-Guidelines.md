@@ -1,6 +1,7 @@
 ---
+title: Review Guidelines
 tag: programming
-stub: >
+excerpt: >
     In this world of AI I, I'm compelled to put together some information on what
     I believe efficient code reviews look like.
 ---
