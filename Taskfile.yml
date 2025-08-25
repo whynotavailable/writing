@@ -8,5 +8,5 @@ vars:
 tasks:
   default:
     cmds:
-      - blag
+      - blag "$HOME/dev/site/"
     silent: true
