@@ -1,12 +1,3 @@
----
-title: Review Guidelines
-category: programming
-published: true
-excerpt: >
-    In this world of AI I, I'm compelled to put together some information on what
-    I believe efficient code reviews look like.
----
-
 In this world of AI I, I'm compelled to put together some information on what I believe efficient
 code reviews look like.
 
@@ -50,7 +41,7 @@ debt it should be added to the coding guidelines."
 guideline in question as well as an explanation of how it applies. Will impact the results of the
 review.
 
-___
+______________________________________________________________________
 
 What I see relatively often when it comes to code reviews taking a long time are large amounts of
 nitpicks and supposed tech debt. By simply ignoring nitpicks and requiring the reviewer to do the
@@ -112,4 +103,3 @@ A few reasons.
 - Petty bickering is meaningless and a de-motivator for code authors.
 - AI code is a lot more common now and AIs can write code much faster than humans. Humans however
   still need to be the ones to review such code.
-
